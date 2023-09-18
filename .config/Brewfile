@@ -1,7 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 brew "bat"
-brew "docker"
 brew "fd"
 brew "lsd"
 brew "neovim"
