@@ -18,9 +18,12 @@ ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Syntax highlighting
+source ~/.config/zsh/catppuccin_frappe-zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(fnm env --use-on-cd)"
 
 eval "$(starship init zsh)"
-
+eval "$(zoxide init zsh)"
