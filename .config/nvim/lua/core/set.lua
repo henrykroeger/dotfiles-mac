@@ -17,3 +17,7 @@ vim.opt.termguicolors = true
 -- Edges
 vim.opt.scrolloff = 8
 vim.opt.colorcolumn = "80"
+
+-- Disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
