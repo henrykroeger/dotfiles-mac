@@ -1,6 +1,6 @@
 [user]
-	name = Henry Kroeger
-	email = 7549541+henrykroeger@users.noreply.github.com
+    name = Henry Kroeger
+    email = 7549541+henrykroeger@users.noreply.github.com
 
 [core]
     pager = delta
@@ -9,10 +9,10 @@
     diffFilter = delta --color-only
 
 [include]
-	path = .config/delta/frappe.gitconfig
+    path = .config/delta/frappe.gitconfig
 
 [delta]
-	features = catppuccin-frappe
+    features = catppuccin-frappe
     navigate = true    # use n and N to move between diff sections
     light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
 
