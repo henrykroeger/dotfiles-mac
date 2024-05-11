@@ -1,7 +1,12 @@
+# Basics
+export EDITOR="nvim"
+export VISUAL="nvim"
+
 # Aliases
 alias cat="bat"
 alias vim="nvim"
 alias dots="git --git-dir=$HOME/.dots --work-tree=$HOME"
+alias lg="lazygit"
 
 # zsh completion engine configuration
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
