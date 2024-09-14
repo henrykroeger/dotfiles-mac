@@ -5,8 +5,17 @@ export VISUAL="nvim"
 # Aliases
 alias cat="bat"
 alias vim="nvim"
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
 alias dots="git --git-dir=$HOME/.dots --work-tree=$HOME"
 alias lg="lazygit"
+alias lgdots="lazygit --git-dir=$HOME/.dots --work-tree=$HOME"
 
 # zsh completion engine configuration
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate

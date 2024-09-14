@@ -16,7 +16,9 @@ follow the steps below.
 
 ### Homebrew
 
-TODO: Add information about Brewfile and `brew bundle`.
+Use `brew bundle dump` to create a Brewfile.
+
+Use `brew bundle install` to install all dependencies from the Brewfile.
 
 ### Tmux
 
@@ -32,6 +34,8 @@ Use the `dots` command in the same way that you would use the `git` command.
 To add a file, use `dots add <filename>`.
 
 To commit, use `dots commit`.
+
+To use lazygit with the dots command, use `lgdots`.
 
 ### .gitignore
 
